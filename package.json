@@ -1,0 +1,15 @@
+{
+  "name": "flightsandsearch",
+  "version": "1.0.0",
+  "description": "Micro Service for handling flight curd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "darshan trivedi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2"
+  }
+}
