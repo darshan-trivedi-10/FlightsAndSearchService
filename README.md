@@ -21,4 +21,15 @@
 
 ```
 
-- Once you've added your db config as listed above, go to the `src` folder from your terminal and execute `npx sequelize db:create`.
+- Once you've added your db config as listed above, go to the `src` folder from your terminal and execute
+  `npx sequelize db:create `
+  `npx sequelize db:migrate`
+
+## DB Design
+
+- Airplane Table
+- Flight Table
+- Aitport Table
+- City Table
+
+![1675249180557](image/README/1675249180557.png)
