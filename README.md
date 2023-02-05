@@ -1,4 +1,5 @@
 # Welcome to Flights And Search Service
+- The present Micro-service is a part of an Airline Booking Backend System, tasked with performing the fundamental CRUD (Create, Read, Update, Delete) operations for entities such as flights, airplanes, cities, and airports. It implements a sophisticated data filtering mechanism, allowing users to search flights based on various parameters, including price, departure airport, and arrival airport. The solution is implemented using Node.js, Express and MySQL, ensuring reliable and scalable performance in a micro-service architecture.
 
 ### Project Setup
 
