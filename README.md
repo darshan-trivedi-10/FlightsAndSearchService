@@ -1,4 +1,4 @@
-# Welcome to Flights Service
+# Welcome to Flights And Search Service
 
 ### Project Setup
 
