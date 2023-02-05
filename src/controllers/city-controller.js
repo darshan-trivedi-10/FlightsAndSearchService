@@ -69,13 +69,13 @@ const get = async (req, res) => {
 // PATCH -> /city/:id -> req.body
 const update = async (req, res) => {
     try {
-        const city = await cityService.updateCity(req.params.id, req.body);
-        return res.status(201).json({
-            data: city,
+        const response = await cityService.updateCity(req.params.id, req.body);
+        return res.status(200).json({
+            data: response,
             success: true,
-            message: "Successfully created a city",
+            message: 'Successfully updated a city',
             err: {}
-        })
+        });
 
     } catch (error) {
         console.log(error);
