@@ -17,7 +17,6 @@ class FlightService {
             const flight = await this.flightRepository.createFlight({
                 ...data, totalSeats: airplan.capacity
             });
-            console.log("In a service layer flight is ", flight);
             return flight;
         } catch (error) {
             console.log("Something went wrong in the service layer");

@@ -4,8 +4,16 @@ const flightService = new FlightService();
 
 const create = async (req, res) => {
     try {
-        const flight = await flightService.createFlight(req.body);
-        console.log("flight ", flight);
+        let flightRequestData = {
+            flightNumber: req.body.flightNumber,
+            airplaneId: req.body.airplaneId,
+            departureAirportId: req.body.departureAirportId,
+            arrivalAirportId: req.body.arrivalAirportId,
+            arrivalTime: req.body.arrivalTime,
+            departureTime: req.body.departureAirportId,
+            price: req.body.price
+        }
+        const flight = await flightService.createFlight(flightRequestData);
         return res.status(201).json({
             data: flight,
             success: true,
@@ -43,5 +51,5 @@ const getAll = async (req, res) => {
 }
 
 module.exports = {
-    create,getAll
+    create, getAll
 }
